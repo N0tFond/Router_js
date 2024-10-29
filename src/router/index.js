@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/loader',
       name: 'loader',
       component: () => import('../views/LoaderView.vue')
+    },
+    {
+      path: '/forms',
+      name: 'forms',
+      component: () => import('../views/FormView.vue')
     }
   ]
 })
