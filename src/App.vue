@@ -5,10 +5,9 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
+    <img src="/src/assets/imgs/avatar.png" class="logo" alt="">
     <div class="wrapper">
-      <HelloWorld msg="Bien joué !" />
+      <HelloWorld msg="Site test !" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -30,7 +29,9 @@ header {
 
 .logo {
   display: block;
+  height: 8rem;
   margin: 0 auto 2rem;
+  border-radius: 1.5rem;
 }
 
 nav {
