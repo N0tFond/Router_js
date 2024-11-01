@@ -8,7 +8,6 @@ import HelloWorld from './components/HelloWorld.vue'
     <img src="/src/assets/imgs/avatar.png" class="logo" alt="">
     <div class="wrapper">
       <HelloWorld msg="Site test !" />
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
@@ -35,6 +34,8 @@ header {
 }
 
 nav {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   font-size: 12px;
   text-align: center;
