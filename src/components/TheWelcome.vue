@@ -1,88 +1,27 @@
-<script setup>
-import WelcomeItem from './WelcomeItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
-import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
-</script>
-
 <template>
-  <WelcomeItem>
-    <template #icon>
-      <DocumentationIcon />
-    </template>
-    <template #heading>Documentation</template>
-
-    Vue’s
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-    provides you with all information you need to get started.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <ToolingIcon />
-    </template>
-    <template #heading>Tooling</template>
-
-    This project is served and bundled with
-    <a href="https://vite.dev/guide/features.html" target="_blank" rel="noopener">Vite</a>. The
-    recommended IDE setup is
-    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank" rel="noopener">Volar</a>. If
-    you need to test your components and web pages, check out
-    <a href="https://www.cypress.io/" target="_blank" rel="noopener">Cypress</a> and
-    <a href="https://on.cypress.io/component" target="_blank" rel="noopener"
-      >Cypress Component Testing</a
-    >.
-
-    <br />
-
-    More instructions are available in <code>README.md</code>.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <EcosystemIcon />
-    </template>
-    <template #heading>Ecosystem</template>
-
-    Get official tools and libraries for your project:
-    <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>,
-    <a href="https://router.vuejs.org/" target="_blank" rel="noopener">Vue Router</a>,
-    <a href="https://test-utils.vuejs.org/" target="_blank" rel="noopener">Vue Test Utils</a>, and
-    <a href="https://github.com/vuejs/devtools" target="_blank" rel="noopener">Vue Dev Tools</a>. If
-    you need more resources, we suggest paying
-    <a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">Awesome Vue</a>
-    a visit.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <CommunityIcon />
-    </template>
-    <template #heading>Community</template>
-
-    Got stuck? Ask your question on
-    <a href="https://chat.vuejs.org" target="_blank" rel="noopener">Vue Land</a>, our official
-    Discord server, or
-    <a href="https://stackoverflow.com/questions/tagged/vue.js" target="_blank" rel="noopener"
-      >StackOverflow</a
-    >. You should also subscribe to
-    <a href="https://news.vuejs.org" target="_blank" rel="noopener">our mailing list</a> and follow
-    the official
-    <a href="https://twitter.com/vuejs" target="_blank" rel="noopener">@vuejs</a>
-    twitter account for latest news in the Vue world.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <SupportIcon />
-    </template>
-    <template #heading>Support Vue</template>
-
-    As an independent project, Vue relies on community backing for its sustainability. You can help
-    us by
-    <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
-  </WelcomeItem>
+  <section class="container mx-auto px-8 py-10">
+    <div class="relative flex flex-col bg-clip-border rounded-xl bg-neutral-800 text-slate-400 border border-gray-300 rounded-2xl">
+      <div class="relative bg-clip-border mt-4 mx-4 rounded-xl overflow-hidden bg-white text-gray-700 -mt-6 h-60 !rounded-lg">
+        <img src="../assets/imgs/wallpaper.jpg" alt="dark" width="1024" height="1024" decoding="async" data-nimg="1" class="w-full h-full object-center" loading="lazy" />
+      </div>
+      <div class="p-6">
+        <div class="flex lg:gap-0 gap-6 flex-wrap justify-between items-center">
+          <div class="flex items-center gap-3 pb-4">
+            <img src="../assets/imgs/avatar.png" alt="avatar" class="inline-block relative object-cover object-center w-12 h-12 rounded-lg" />
+            <div>
+              <h6 class="block antialiased tracking-normal font-sans text-base font-semibold leading-relaxed text-gray-400">Not Found</h6>
+              <p class="block antialiased font-sans text-sm font-light leading-normal text-inherit font-normal text-gray-700">mon.email@gmail.com</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <button class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg border border-white text-white hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] border-gray-300 flex items-center gap-2" type="button" data-ripple-dark="true"><i class="fa fa-github text-base" aria-hidden="true"></i>Github</button><button class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg border border-white text-white hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] border-gray-300 flex items-center gap-2" type="button" data-ripple-dark="true"><i class="fa-brands fa-twitter" aria-hidden="true"></i>Twitter</button><button class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg border border-white text-white hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] border-gray-300 flex items-center gap-2" type="button" data-ripple-dark="true"><i class="fa-brands fa-medium" aria-hidden="true"></i>Medium</button>
+          </div>
+        </div>
+        <p class="block antialiased font-sans text-sm font-light leading-normal text-inherit font-normal text-gray-400 mt-6">
+          Développeur Front End en apprentissage. <br />
+          Je souhaite en faire mon métier, passionner par le développement web, je serais toujours ravi de pouvoir apprendre de nouvelle choses.
+        </p>
+      </div>
+    </div>
+  </section>
 </template>
