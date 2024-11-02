@@ -14,6 +14,9 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/loader">Loader</RouterLink>
         <RouterLink to="/forms">Forms</RouterLink>
       </nav>
+      <nav>
+        <RouterLink to="/notfound">Not Found Page </RouterLink>
+      </nav>
     </div>
   </header>
 

@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
 import LoaderView from '@/views/LoaderView.vue'
 import FormView from '@/views/FormView.vue'
+import NotFoundView from '@/views/NotFoundView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,7 +19,6 @@ const router = createRouter({
       //? On à pas besoin de la ligne 'component: () => import('../views/AboutView.vue')' on peut tout simplement la remplacer par le "component" suivi du nom du component à mettre en place
       // component: () => import('../views/AboutView.vue')
       component: AboutView
-
     },
     {
       path: '/loader',
@@ -31,6 +31,11 @@ const router = createRouter({
       name: 'forms',
       // component: () => import('../views/FormView.vue')
       component: FormView
+    },
+    {
+      path: '/notfound',
+      name: 'notfound',
+      component: NotFoundView
     }
   ]
 })
