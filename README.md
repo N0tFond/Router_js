@@ -1,4 +1,4 @@
-# Router JS
+# Router JS / TS
 
 ### Test d'un routeur JavaScript pour comprendre son fonctionnement
 
