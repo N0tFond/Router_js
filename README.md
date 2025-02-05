@@ -4,7 +4,7 @@
 
 Suite à un besoin de la technologie d'implémentation d'un routeur, j'ai pris la décision d'apprendre le JavaScript / TypeScript.
 
-Afin de mieux en connaitres son fonctionnement j'ai donc crées plusieurs repo sur les routeur, celui ci est pour le router en JAvaScript, un repo similaire est disponible avec un router lui, en TypeScript
+Afin de mieux en connaitres son fonctionnement j'ai donc crées plusieurs repo sur les routeur, celui ci est pour le router en JavaScript, un repo similaire est disponible avec un router lui, en TypeScript
 
 # [Router TypeScript](https://github.com/N0tFond/Router_test)
 
